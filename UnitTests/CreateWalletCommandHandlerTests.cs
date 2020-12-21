@@ -49,7 +49,7 @@ namespace Endava_Project.Tests
 
             var result = await sut.Handle(command, CancellationToken.None);
 
-            Assert.IsTrue(result.IsSuccessful);
+            Assert.IsFalse(result.IsSuccessful);
         }
 
         [Test] //Test pentru a verifica daca putem crea un Wallet cu un currency invalid 
